@@ -1,0 +1,53 @@
+{
+  "name": "roast-lint-vscode",
+  "displayName": "Roast Lint",
+  "description": "A witty senior engineer roasts or praises your code based on lint results.",
+  "version": "1.0.0",
+  "publisher": "mitesh-firake",
+  "author": "Mitesh Firake",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Linters",
+    "Other"
+  ],
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "roast-lint.roast",
+        "title": "Roast My Code",
+        "category": "Roast Lint"
+      }
+    ],
+    "configuration": {
+      "title": "Roast Lint",
+      "properties": {
+        "roastLint.llmUrl": {
+          "type": "string",
+          "default": "http://localhost:11434/api/generate",
+          "description": "LLM API URL (e.g., Ollama or OpenAI)"
+        },
+        "roastLint.llmModel": {
+          "type": "string",
+          "default": "llama3",
+          "description": "Model name"
+        },
+        "roastLint.llmApiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API Key (if required)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "echo 'No compilation needed for ESM JS'",
+    "watch": "echo 'Watching...'",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  }
+}

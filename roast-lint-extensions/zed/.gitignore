@@ -1,0 +1,6 @@
+# Rust/Zed Build Artifacts
+target/
+*.wasm
+
+# OS files
+.DS_Store

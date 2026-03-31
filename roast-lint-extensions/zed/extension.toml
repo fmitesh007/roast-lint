@@ -1,0 +1,10 @@
+id = "roast-lint"
+name = "Roast Lint"
+version = "1.0.0"
+authors = ["Mitesh Firake"]
+description = "A senior engineer roasts or praises your code based on lint results."
+repository = "https://github.com/fmitesh007/roast-lint"
+
+[slash_commands.roast]
+description = "Roast or praise the current project's code based on lint results."
+requires_argument = false

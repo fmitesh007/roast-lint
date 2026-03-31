@@ -1,0 +1,33 @@
+{
+  "name": "roast-lint",
+  "version": "1.0.0",
+  "description": "A witty CLI tool that roasts or praises your code based on lint results (Biome/ESLint).",
+  "type": "module",
+  "bin": {
+    "roast-lint": "index.js"
+  },
+  "files": [
+    "index.js",
+    "linterRunner.js",
+    "issueParser.js",
+    "llmClient.js",
+    "promptBuilder.js",
+    "utils.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "cli",
+    "linter",
+    "roast",
+    "biome",
+    "eslint",
+    "ollama",
+    "llm",
+    "ai"
+  ],
+  "author": "Mitesh Firake",
+  "license": "MIT"
+}
