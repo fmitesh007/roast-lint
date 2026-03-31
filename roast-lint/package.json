@@ -1,6 +1,6 @@
 {
   "name": "roast-lint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A witty CLI tool that roasts or praises your code based on lint results (Biome/ESLint).",
   "type": "module",
   "bin": {
